@@ -1,0 +1,106 @@
+@media (max-width: 480px){
+    
+    .tarcards{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.trf-btn {
+    background-color: #9E00FF;
+    width: 252px;
+    height: 46px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    color: #ffffff;
+    font-family: 'raleway';
+}
+
+.tarcards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1em;
+}
+
+.cardtar {
+    height: 38.5em;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "trf-list"
+        "button";
+    padding: 16px;
+}
+
+.header {
+    grid-area: header;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description {
+    grid-area: trf-list;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.button {
+    grid-area: button;
+    text-align: center;
+}
+
+.trf-btn:hover{
+    background-color: transparent;
+    border: 1px solid #9E00FF;
+    color: #9E00FF;
+    transition: 0, 5s;
+}
+.text {
+    margin-top: 3em;
+}
+
+@media (max-width: 480px){
+    .tarcards{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 1em;
+    }
+    
+    .cardtar {
+        height: 38.5em;
+        background-color: #ffffff;
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "trf-list"
+            "button";
+        padding: 16px;
+    }
+    
+    .header {
+        grid-area: header;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .description {
+        grid-area: trf-list;
+        font-size: 1em;
+        margin: 10px 0;
+    }
+    
+    .button {
+        grid-area: button;
+        text-align: center;
+    }
+    
+    
+}

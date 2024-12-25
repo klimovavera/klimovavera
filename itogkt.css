@@ -1,0 +1,495 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #9E00FF;
+}
+
+.el8 {
+    margin: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 45em;
+}
+
+.el6 {
+    margin: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 88em;
+
+}
+
+.el2 {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.el15 {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 175em;
+}
+
+.el {
+    margin: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.logo {
+    display: flex;
+    gap: 7px;
+
+}
+
+
+
+
+
+.logo h4 {
+    font-family: 'Akony Bold';
+    font-size: 17px;
+}
+
+@font-face {
+    font-family: 'AKONY Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('AKONY Bold'), url('akony.woff') format('woff');
+}
+
+.cont {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 95%;
+    padding: 0 15px;
+}
+
+body {
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+h3 {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: 'raleway';
+
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+.apply-btn {
+    width: 258px;
+    height: 39px;
+    padding: 10px 20px;
+    background-color: #9E00FF;
+    color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-family: 'Raleway';
+}
+
+
+.apply-btn:hover {
+    background-color: transparent;
+    border: 1px solid #9E00FF;
+    color: #9E00FF;
+    transition: 0, 5s;
+}
+
+section {
+    margin-top: 7em;
+}
+
+h1,
+h2 {
+    font-size: 45px;
+    margin: 0
+}
+
+.intro p,
+.about .card,
+.teachers .teacher-card,
+.reviews .review-card,
+.tariffs .cardtar {
+    margin-bottom: 20px;
+}
+
+.card,
+.teacher-card,
+.review-card,
+.cardtar {
+
+    border-radius: 30px;
+    padding: 15px;
+}
+
+
+.tarifcards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1em;
+}
+
+
+
+.teachers,
+.tariffs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10em;
+    /* Отступ между карточками */
+}
+
+.card,
+.teacher-card,
+.cardtar {
+    flex: 1 1 calc(33.33% - 20px);
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+
+@media ((min-width: 768px) and (max-width: 991px)) {}
+
+@media (max-width: 480px) {
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+    
+    }
+    nav ul {
+        list-style-type: none;
+        display: none;
+        gap: 20px;
+    }
+    
+    h2 {
+        font-size: 40px;
+    }
+    .card,
+    .teacher-card,
+    .cardtar {
+        flex: 1 1 calc(33.33% - 20px);
+        box-sizing: border-box;
+        border-radius: 30px;
+        padding: 5px;
+    }
+
+    body {
+        background-color: #fbf4ff;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        color: #9E00FF;
+    }
+
+    /* .el8, .el6, .el2, .el15, .el {
+        margin: 0;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }
+    
+    .el8 {
+        top: 45em;
+    }
+    
+    .el6 {
+        top: 88em;
+    }
+    
+    .el15 {
+        top: 175em;
+    } */
+
+    .logo {
+        display: flex;
+        gap: 7px;
+    }
+
+    .logo h4 {
+        font-family: 'Akony Bold';
+        font-size: 12px;
+    }
+    .intro p,
+    .about .card,
+    .teachers .teacher-card,
+    .reviews .review-card,
+    .tariffs .cardtar {
+        margin-bottom: 10px;
+    }
+
+    @font-face {
+        font-family: 'AKONY Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('AKONY Bold'), url('akony.woff') format('woff');
+    }
+
+    .cont {
+        margin: 0 auto;
+        /* width: 100%;
+        max-width: 95%; */
+        padding: 15px;
+    }
+
+    body {
+        font-family: 'Raleway';
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .trf-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .trf-inner h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .inn3 {
+        margin-top: 5em;
+    }
+
+    .tariff-card {
+        height: 38.5em;
+        background-color: #ffffff;
+    }
+
+    .intro h1 {
+        font-family: 'AKONY Bold';
+        text-align: center;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .trf-inner li {
+        color: #9E00FF;
+    }
+
+
+    .trf-inner span {
+        color: #0d0d0d;
+        font-size: 20px;
+    }
+
+    .trf-list {
+        margin-top: 2em;
+    }
+
+    .text {
+        margin-top: 3em;
+    }
+
+    .p,
+    .pc {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        color: #A0A0A0;
+    }
+
+
+    .main-btn:hover {
+        background-color: transparent;
+        border: 1px solid #9E00FF;
+        color: #9E00FF;
+        transition: 0.5s;
+    }
+
+    .num {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .cards,
+    .teachcards {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 1em;
+        flex-wrap: wrap;
+    }
+    .menu1{
+        display: none;
+    }
+
+    .teacher-card,
+    .card {
+        width: 100%;
+        max-width: 412px;
+        height: auto;
+        background-color: #ffffff;
+        border: 1px solid transparent;
+        border-radius: 30px;
+        margin: 10px;
+    }
+
+    .phototeach {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 400px;
+        margin: 20px auto;
+    }
+
+    .textteach {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .trf-btn {
+        background-color: #9E00FF;
+        width: 100%;
+        max-width: 252px;
+        height: 46px;
+        border: 1px solid transparent;
+        border-radius: 30px;
+        color: #ffffff;
+        font-family: 'raleway';
+    }
+
+    .zsg {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .textrew {
+        margin: 2em;
+    }
+
+    .prew {
+        margin-top: 5%;
+    }
+
+    .textteach h5 {
+        font-size: 20px;
+        color: #666666;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+    }
+
+    h3,
+    h5 {
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    @media (max-width: 768px) {
+        .logo h4 {
+            font-size: 12px;
+        }
+
+        /* .intro h1 {
+            font-size: 20px;
+        } */
+
+        .trf-inner h3 {
+            font-size: 24px;
+        }
+
+        .p,
+        .pc {
+            font-size: 14px;
+        }
+
+
+
+        .teacher-card {
+            width: 90%;
+        }
+
+        .card {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 480px) {
+
+        .logo {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .teachcards {
+            flex-direction: column;
+        }
+
+        .textteach {
+            margin-top: 10px;
+        }
+        .apply-btn {
+            display: none;
+        
+        }
+        .menu1{
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+    }
+}

@@ -1,0 +1,56 @@
+@media (max-width: 480px){
+    .teachcards{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .phototeach{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.teachcards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.teacher-card {
+    width: 412px;
+    height: 671px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 30px;
+
+}
+
+.phototeach {
+    margin-left: 85px;
+    margin-right: 85px;
+    margin-top: 50px;
+    /* width: 231px;
+    height: 226px; */
+    border-radius: 400px;
+
+}
+
+.textteach {
+    margin-top: 120px;
+    margin-left: 10px;
+}
+
+.textteach h5 {
+    font-size: 20px;
+    color: #666666;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.teacher-card img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}

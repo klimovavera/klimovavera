@@ -1,0 +1,59 @@
+
+
+
+.request-block {
+    display: flex;
+    background-color: #9E00FF;
+    color: white;
+    border-radius: 40px;
+    padding: 30px;
+    text-align: center;
+    width: auto;
+    margin: 20px auto;
+}
+
+.request-block img {
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.left h2 {
+    text-align: left;
+}
+
+.left p {
+    text-align: left;
+}
+
+.presents {
+    width: 270px;
+}
+
+.form-input {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 30px;
+    height: 2em;
+    width: 80%;
+    background-color: transparent;
+    color: #ffffff;
+
+}
+
+.submit-btn {
+    background-color: white;
+    color: #9E00FF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width: 480px){
+    .request-block{
+        display: flex;
+        flex-direction: column;
+    }
+}
