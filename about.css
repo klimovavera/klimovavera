@@ -1,0 +1,60 @@
+
+
+
+.cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1em;
+
+}
+
+
+.card {
+    flex: 1 1 calc(33.33% - 20px);
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.card {
+    width: 412px;
+    height: 297px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 30px;
+
+}
+
+
+.pc {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    color: #A0A0A0;
+}
+
+
+
+
+
+.num {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 480px){
+    .cards {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 1em;
+    
+    }
+   
+}
+
