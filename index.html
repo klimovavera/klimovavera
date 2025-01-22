@@ -1,361 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пример страницы</title>
-    <link rel="stylesheet" href="itogkt.css">
-    <link rel="stylesheet" href="intro.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="teachers.css">
-    <link rel="stylesheet" href="reviews.css">
-    <link rel="stylesheet" href="tarrifs.css">
-    <link rel="stylesheet" href="faq.css">
-    <link rel="stylesheet" href="request.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <style>
+        table {
+            width: 50%;
+            
+        }
+        td {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+        .backgr {
+            background-color: orange;
+        }
+    </style>
 </head>
 
 <body>
     <script>
-        const questions = document.querySelectorAll('.question');
-        questions.forEach(question => {
-            question.addEventListener('click', () => {
-                const answer = question.nextElementSibling;
-                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-            });
-        });
+        let numbers = [];
+        for (let i = 0; i < 30; i++) {
+            numbers.push(Math.floor(Math.random() * 100));
+        }
+
+        let table = '<table>';
+        for (let i = 0; i < 5; i++) {
+            table += '<tr>';
+            for (let j = 0; j < 6; j++) {
+                let number = numbers[i * 6 + j];
+                let cell = number >= 50 ? 'backgr' : '';
+                table += `<td class="${cell}">${number}</td>`;
+            }
+            table += '</tr>';
+        }
+        table += '</table>';
+        document.body.innerHTML = table;
     </script>
-
-    <img class="el" src="Ellipse 1.svg" alt="">
-    <!-- <img class="el2" src="Ellipse 2.svg" alt=""> -->
-    <img class="el8" src="Ellipse 8.svg" alt="">
-    <img class="el6" src="Ellipse 6.svg" alt="">
-    <img class="el15" src="Ellipse 15.svg" alt="">
-
-    <div class="cont">
-
-        <header>
-            <div class="logo">
-                <img src="Vector 1 (1).svg" alt="Логотип" />
-                <h4>TRUENG</h4>
-            </div>
-            <nav>
-                <img class="menu1" src="Vector (13).svg" alt="">
-                <ul>
-                    <li><a href="#about">О нас</a></li>
-                    <li><a href="#tariffs">Тарифы</a></li>
-                    <li><a href="#teachers">Преподаватели</a></li>
-                    <li><a href="#reviews">Отзывы</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
-            </nav>
-            <button class="apply-btn">Оставить заявку</button>
-        </header>
-
-        <div class="intro">
-            <!-- <img class="imgg" src="Frame 13.svg" alt="">
-            <img class="imgg2" src="Frame 14.svg" alt="">
-            <img class="imgg3" src="Frame 12.svg" alt="">
-            <img class="imgg4" src="Frame 15.svg" alt=""> -->
-            <div class="introtext">
-                <h1><span style="color: #9E00FF;">АНГЛИЙСКИЙ</span> <br>С НУЛЯ ДО С2</h1>
-                <p class="p">Заишитесь на бесплатный пробный урок! Занятия онлайн с преподавателем на нашей совственной
-                    цифровой платформе</p>
-                <button class="main-btn">Хочу на пробный урок!</button>
-            </div>
-
-        </div>
-
-        <section class="about" id="about">
-
-            <h2>О НАС</h2>
-
-            <div class="cards">
-                <div class="card">
-                    <img class="num" src="1.svg" alt="">
-                    <h3>Профессиональные преподаватели</h3>
-                    <p class="pc">Занятия ведут квалифицированные учителя, которые используют современные методики и
-                        учитывают
-                        индивидуальные потребности студентов.</p>
-                </div>
-                <div class="card">
-                    <img class="num" src="2.svg" alt="">
-                    <h3>Индивидуальный подход</h3>
-                    <p class="pc">Возможность адаптации курса под уровень знаний и цели каждого студента, что
-                        способствует более
-                        эффективному обучению.</p>
-                </div>
-                <div class="card">
-                    <img class="num" src="3.svg" alt="">
-                    <h3>Разговорная практика с носителями</h3>
-                    <p class="pc">Акцент на активной разговорной практике, что помогает преодолеть языковой барьер и
-                        научиться свободно
-                        общаться.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="teachers" id="teachers">
-            <h2>НАШИ ПРЕПОДАВАТЕЛИ</h2>
-            <div class="teachcards">
-                <div class="teacher-card">
-                    <div class="phototeach">
-                        <img src="teacher1.png" alt="Преподаватель 1" />
-                    </div>
-                    <div class="textteach">
-                        <h3>Елена</h3>
-                        <h5>Лингвист-переводчик</h5>
-                        <p>Преподаватель английского языка с опытом работы более 5 лет, обладает высоким уровнем
-                            владения языком и умеет адаптировать занятия под различные уровни знаний студентов. </p>
-
-                        <div class="mini">
-                            <img src="Frame 24.svg" alt="">
-                            <img src="Frame 23.svg" alt="">
-                        </div>
-                    </div>
-
-                </div>
-                <div class="teacher-card">
-                    <div class="phototeach">
-                        <img src="teacher2.png" alt="Преподаватель 2" />
-                    </div>
-                    <div class="textteach">
-                        <h3>Изабель</h3>
-                        <h5>Преподаватель</h5>
-                        <p>Преподает английский с 2010 года, использует коммуникативный подход, знает как помочь
-                            студенту
-                            преодолеть языковой барьер</p>
-                        <div class="mini">
-                            <img src="Frame 24.svg" alt="">
-                            <img src="Frame 23.svg" alt="">
-                        </div>
-                    </div>
-
-                </div>
-                <div class="teacher-card">
-                    <div class="phototeach">
-                        <img src="teacher3.png" alt="Преподаватель 3" />
-                    </div>
-                    <div class="textteach">
-                        <h3>Елена</h3>
-                        <h5>Лингвист</h5>
-                        <p>Преподаватель английского языка с опытом работы более 5 лет, обладает высоким уровнем
-                            владения
-                            языком и умеет адаптировать занятия под различные уровни знаний студентов. </p>
-                        <div class="mini">
-                            <img src="Frame 24.svg" alt="">
-                            <img src="Frame 23.svg" alt="">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="reviews" id="reviews">
-            <h2>ОТЗЫВЫ УЧЕНИКОВ</h2>
-            <div class="reviewscards">
-                <div class="review-card">
-                    <div class="textrew">
-                        <div class="zsg">
-                            <h3>Алисия</h3>
-                            <img src="Frame 35.svg" alt="">
-
-                        </div>
-
-                        <div class="prew">
-                            <p>Я изучала английский язык в этой школе и осталась очень довольна! Преподаватели
-                                дружелюбные и
-                                профессиональные, всегда готовы помочь и поддержать. Занятия проходят в увлекательной
-                                форме,
-                                что
-                                позволяет легко воспринимать информацию. Особенно понравились групповые занятия, где
-                                можно
-                                практиковать разговорный язык с другими учащимися. Рекомендую всем, кто хочет уверенно
-                                говорить
-                                на английском!</p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="review-card">
-                    <div class="textrew">
-                        <div class="zsg">
-                            <h3>Карина</h3>
-                            <img src="Frame 34.svg" alt="">
-                        </div>
-                        <div class="prew">
-                            <p>Я была приятно удивлена качеством обучения в школе английского языка! Занятия проводятся
-                                в
-                                удобном темпе, и преподаватели очень внимательные и профессиональные. Мне особенно
-                                понравилась
-                                возможность практиковать разговорный английский в непринужденной обстановке. Рекомендую
-                                всем,
-                                кто хочет освоить язык быстро и эффективно.</p>
-                        </div>
-
-                    </div>
-                </div>
-               
-        </section>
-
-        <section class="tariffs" id="tariffs">
-            <h2>ТАРИФЫ</h2>
-            <div class="tarifcards">
-                <div class="tarcards">
-                    <div class="cardtar">
-                        <div class="header">
-                            <div class="text">
-                                <h3>ИНДИВИДУАЛЬНЫЕ
-                                    ЗАНЯТИЯ</h3>
-                            </div>
-                        </div>
-                        <div class="trf-list">
-                            <ul>
-                                <li><span>4 индивидуальных занятия</span></li>
-                                <li><span>4 занятия в разговорном клубе</span></li>
-                                <li><span>длительность занятий 60 минут</span></li>
-                                <li><span>доступ к онлайн платформе с упражнениями</span></li>
-                                <li><span>онлайн поддержка</span></li>
-                                <li><span>практика в студенческом сообществе</span></li>
-                            </ul>
-                        </div>
-                        <div class="button">
-                            <h3>1000 ₽/занятие</h3>
-                            <button class="trf-btn">Купить</button>
-                        </div>
-                    </div>
-
-                    <div class="cardtar">
-                        <div class="header">
-                            <div class="text"><h3>ВСЕ ВМЕСТЕ</h3></div>
-                        </div>
-                        <div class="trf-list">
-                            <ul>
-                                <li><span>4 индивидуальных занятия</span></li>
-                                <li><span>4 занятия в разговорном клубе</span></li>
-                                <li><span>длительность занятий 60 минут</span></li>
-                                <li><span>доступ к онлайн платформе с упражнениями</span></li>
-                                <li><span>онлайн поддержка</span></li>
-                                <li><span>практика в студенческом сообществе</span></li>
-                            </ul>
-                        </div>
-                        <div class="button">
-                            <h3>6200 ₽</h3>
-                            <button class="trf-btn">Купить</button>
-                        </div>
-                    </div>
-
-                    <div class="cardtar">
-                        <div class="header">
-                            <div class="text"><h3>РАЗГОВОРНЫЙ КЛУБ</h3></div>
-                        </div>
-                        <div class="trf-list">
-                            <ul>
-                                <li><span>длительность занятий 60 минут</span></li>
-                                <li><span>бесплатное пробное занятие</span></li>
-                                <li><span>бесплатное пробное занятие</span></li>
-                                <li><span>100% разговорной практики</span></li>
-                            </ul>
-                        </div>
-                        <div class="button">
-                            <h3>1000 ₽/занятие</h3>
-                            <button class="trf-btn">Купить</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="questions">
-            <h2>Часто задаваемые вопросы</h2>
-            <div class="faq">
-                <div class="question">Можно ли заморозить абонемент?</div>
-                <div class="answer">Да! Заморозка действует на индивидуальные занятия. Абонемент можно заморозить
-                    максимум на 1 месяц</div>
-            </div>
-
-            <div class="faq">
-                <div class="question">Личный преподаватель будет со мной весь курс?</div>
-                <div class="answer"></div>
-            </div>
-
-            <div class="faq">
-                <div class="question">По какой программе я буду заниматься?</div>
-                <div class="answer"></div>
-            </div>
-
-            <div class="faq">
-                <div class="question">Сколько времени мне понадобится, чтобы дойти до уровня B1?</div>
-                <div class="answer"></div>
-            </div>
-
-            <div class="faq">
-                <div class="question">Смогу ли я сдать TOEFL после обучения?</div>
-                <div class="answer"></div>
-            </div>
-        </section>
-
-        <div class="request-block">
-            <div class="left">
-                <h2>Оставьте заявку <br>на пробный урок</h2>
-                <p>Индивидуальный урок с опытным преподавателем. <br>Длительность урока 40 минут</p>
-                <div class="presents">
-                    <img src="Frame 25.svg" alt="Изображение 1">
-                    <img src="Frame 29.svg" alt="Изображение 2">
-                </div>
-
-            </div>
-
-            <div class="right">
-                <form>
-                    <input type="text" class="form-input" placeholder="Имя" required>
-                    <input type="tel" class="form-input" placeholder="Номер телефона" required>
-                    <input type="email" class="form-input" placeholder="Почта" required>
-                    <button type="submit" class="submit-btn">Оставить заявку</button>
-                </form>
-
-            </div>
-        </div>
-
-        
-        </div>
-
-    </div>
-    <div class="footer" id="contacts">
-        <div class="footermob">
-            <div class="logo">
-                <h4>TRUENG</h4>
-            </div>
-
-            <div class="menu">
-                <h4>МЕНЮ</h4>
-                <a href="#about">О нас</a>
-                <a href="#tariffs">Тарифы</a>
-                <a href="#teachers">Преподаватели</a>
-                <a href="#reviews">Отзывы</a>
-            </div>
-
-            <div class="contacts">
-                <h4>КОНТАКТЫ</h4>
-                <div class="phone-number">8 800 773 20 21</div>
-
-                <div class="social-icons">
-                    <a href="#"><img src="hugeicons_vk.svg" alt="VK" width="20"></a>
-                    <a href="#"><img src="basil_telegram-outline.svg" alt="Telegram" width="20"></a>
-                    <a href="#"><img src="ic_baseline-whatsapp.svg" alt="WhatsApp" width="20"></a>
-                </div>
-            </div>
-
-            <a href="#" class="back-to-top">Наверх</a>
-        </div>
-
 </body>
-
 </html>
